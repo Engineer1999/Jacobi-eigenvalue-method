@@ -1,3 +1,7 @@
+%%
+% Author:- Bhargav Patel
+% Project:- Matlab algorithme for Singular Value Decomposition
+%%
     n = 3;   %SIZE OF IMAGE.
     A = randi(n,n);
     
@@ -51,6 +55,7 @@
     VT = matrixMultiply(matrixMultiply(eigenValueT,eigenVectorT),A);
     my = matrixMultiply(matrixMultiply(eigenVector,eigenValue),VT);
     inbuilt = matrixMultiply(matrixMultiply(uu,ss),vv');
+    
     %FOR IMAGE VISULIZATION
     %figure(2);imshow(uint8(inbuilt));
     %figure(1);imshow(A);
